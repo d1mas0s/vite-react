@@ -8,6 +8,7 @@ const Bar = ({page, setPage, lastPage}) => {
         <button className="PagiButton" onClick={()=>setPage(1)}>1</button>
         <button className="PagiButton" onClick={()=>setPage(2)}>2</button>
         {/* <input onChange={(e)=>setPage(e.target.value)}></input> */} 
+        <button className="PagiButton" >...</button>
         <button className="PagiButton" onClick={()=>setPage(l-1)}>{l-1}</button>
         <button className="PagiButton" onClick={()=>setPage(l)}>{l}</button>
 
