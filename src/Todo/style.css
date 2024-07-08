@@ -1,0 +1,103 @@
+.Todo {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  
+    color-scheme: light dark;
+    color: rgba(0, 0, 0, 0.87);
+
+
+}
+
+.FlexList {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    padding: 5px;
+    margin: 5px;
+}
+
+::placeholder {
+    background-color: white;
+    font-size: large;
+}
+
+.TaskTextContainerClosed {
+    border: 0px;
+    width: 90%;
+    height: 97%;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: large;
+}
+.TaskTextContainerOpen {
+    border: 0px;
+    width: 90%;
+    height: 97%;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0);
+    font-style: italic;
+    font-size: large;
+}
+
+.TaskPlateUndone {
+    height: 60px;
+    display: flex;
+    background: linear-gradient(90deg, #bad2d3, #ffffff, #ffffff);
+    padding: 5px;
+    margin: 5px;
+    border: solid #000000 1px;
+    border-radius: 15px;
+    font-size: large;
+}
+
+.TaskPlateDone {
+    height: 60px;
+    display: flex;
+    background: linear-gradient(90deg, #c8ff30, #ffffff, #ffffff);
+    padding: 5px;
+    margin: 5px;
+    border: solid #000000 1px;
+    border-radius: 15px;
+    font-size: large;
+}
+
+.TaskDetail {
+    border: solid #000 1px;
+    border-radius: 7px;
+    width: 30px;
+    height: 30px;
+    align-self: center;
+    z-index: 999;
+    margin: 5px;
+}
+
+.TaskDetail:hover {
+    background: #1ae6e6;
+  }
+
+.InputTextContainer {
+    border: 0px;
+    width:100%;
+    height: 80%;
+    align-self: center;
+
+    height: 30px;
+    display: flex;
+    background: white;
+    padding: 5px;
+    font-size: large;
+
+    border: solid #000000 1px;
+    border-radius: 15px;
+
+}
+
+.InputPlate {
+    height: 30px;
+    display: flex;
+
+    padding: 5px;
+
+    
+}
