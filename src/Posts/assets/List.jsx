@@ -7,8 +7,6 @@ const Posts = () => {
     const [postsPerPage, setPostsPerPage] = useState(5);
     const [lastPage, setLastPage] = useState(20);
 
-    //setLastPage(Math.ceil(posts.length/postsPerPage))
-
     useEffect(() => {
       async function fetchData() {
         try {
@@ -21,6 +19,12 @@ const Posts = () => {
       }
       fetchData(); 
     }, []); 
+
+    useEffect(()=>{
+        setLastPage(Math.ceil(posts.length/postsPerPage));
+        console.log(postsPerPage);
+    }, [posts.length, postsPerPage]);
+
     return (
       <div>
         <Bar page={page} setPage={setPage} lastPage={lastPage} setPostsPerPage={setPostsPerPage}/>
