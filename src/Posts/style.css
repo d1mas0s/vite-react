@@ -35,10 +35,30 @@
     margin: 2px;
   }
 
+  .PagiButton:hover {
+    width: 70px;
+    height: 50px;
+    background: rgb(99, 99, 107);
+    color: white;
+    font-size: x-large;
+    outline: 0px;
+    margin: 2px;
+  }
+
   .PagiButtonActive {
     width: 70px;
     height: 50px;
     background: rgb(87, 87, 153);
+    color: white;
+    font-size: x-large;
+    outline: 0px;
+    margin: 2px;
+  }
+
+  .PagiButtonActive:hover {
+    width: 70px;
+    height: 50px;
+    background: rgb(113, 113, 204);
     color: white;
     font-size: x-large;
     outline: 0px;
