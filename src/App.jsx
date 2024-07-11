@@ -4,7 +4,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Header from './Header';
 import Home from './Home';
 import Todo from './Todo';
-import Posts from './Posts';
+import Posts from './Posts/assets/List';
 
 function App() {
   return (
