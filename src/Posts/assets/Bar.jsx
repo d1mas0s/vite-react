@@ -1,7 +1,8 @@
 
-const Bar = ({page, setPage, lastPage}) => {
+const Bar = ({posts, page, setPage, lastPage}) => {
     const l = lastPage;
-    return (
+    console.log(posts);
+    if (posts.length != 0) return (
       <div>
         <button className="PagiButton" onClick={page>1?()=>setPage(page-1):()=>setPage(1)}>prev</button>
         

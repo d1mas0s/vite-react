@@ -24,7 +24,7 @@ const Posts = () => {
     }, []); 
     return (
       <div>
-        <Bar page={page} setPage={setPage} lastPage={lastPage} setPostsPerPage={setPostsPerPage}/>
+        <Bar posts={posts} page={page} setPage={setPage} lastPage={lastPage} setPostsPerPage={setPostsPerPage}/>
         <div className='PostsBackground'>
         {posts.map((post, index) => (
           index >=page*postsPerPage-postsPerPage && index <= page*postsPerPage-1? 
@@ -36,7 +36,7 @@ const Posts = () => {
           <></>
         ))}
         </div>
-        <Bar page={page} setPage={setPage} lastPage={lastPage} setPostsPerPage={setPostsPerPage}/>
+        <Bar posts={posts} page={page} setPage={setPage} lastPage={lastPage} setPostsPerPage={setPostsPerPage}/>
       </div>
     );
   };
