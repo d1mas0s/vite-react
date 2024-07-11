@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { Fragment, useState } from "react";
 import Input from "./assets/Input";
 import List from "./assets/List";
 //import Task from "./assets/Task";
@@ -40,10 +40,10 @@ function Todo() {
     }
 
     return (
-      <div className="Todo">
+      <Fragment className="Todo">
         <Input addTask={addTask} inputed={inputed} setInputed={setInputed} />
         <List tasks={tasks} delTask={delTask} togTask={togTask} editTask={editTask}/>
-      </div>
+      </Fragment>
     )
   }
   

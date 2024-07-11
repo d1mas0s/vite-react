@@ -3,7 +3,7 @@ const Bar = ({posts, page, setPage, lastPage}) => {
     const l = lastPage;
     console.log(posts);
     if (posts.length != 0) return (
-      <div>
+      <>
         <button className="PagiButton" onClick={page>1?()=>setPage(page-1):()=>setPage(1)}>prev</button>
         
         <button className={page==1?"PagiButtonActive":"PagiButton"} onClick={()=>setPage(1)}>1</button>
@@ -14,7 +14,7 @@ const Bar = ({posts, page, setPage, lastPage}) => {
         <button className={page==l?"PagiButtonActive":"PagiButton"} onClick={()=>setPage(l)}>{l}</button>
 
         <button className="PagiButton" onClick={page<l?()=>setPage(page+1):()=>setPage(l)}>next</button>
-      </div>
+      </>
     );
   };
   

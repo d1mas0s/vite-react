@@ -23,7 +23,7 @@ const Posts = () => {
       fetchData(); 
     }, []); 
     return (
-      <div>
+      <>
         <Bar posts={posts} page={page} setPage={setPage} lastPage={lastPage} setPostsPerPage={setPostsPerPage}/>
         <div className='PostsBackground'>
         {posts.map((post, index) => (
@@ -37,7 +37,7 @@ const Posts = () => {
         ))}
         </div>
         <Bar posts={posts} page={page} setPage={setPage} lastPage={lastPage} setPostsPerPage={setPostsPerPage}/>
-      </div>
+      </>
     );
   };
   
