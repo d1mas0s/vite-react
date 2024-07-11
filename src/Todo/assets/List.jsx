@@ -1,7 +1,7 @@
 import Task from "./Task";
 
-const List = (props) => {
-    const taskList = props.tasks.map(e => <Task key={e.id} id={e.id} value={e.value} toggled={e.toggled} editing={e.editing} delTask={props.delTask} togTask={props.togTask} editTask={props.editTask}/>)
+const List = ({tasks, delTask, togTask, editTask}) => {
+    const taskList = tasks.map(e => <Task key={e.id} id={e.id} value={e.value} toggled={e.toggled} editing={e.editing} delTask={delTask} togTask={togTask} editTask={editTask}/>)
     return (
         <div className="FlexList">
             {taskList}

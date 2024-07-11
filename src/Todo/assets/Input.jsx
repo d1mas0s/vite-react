@@ -1,12 +1,12 @@
 
 
-const Input = (props) => {
+const Input = ({inputed, setInputed, addTask}) => {
     return (
         <div className="InputPlate">
             <input className="InputTextContainer"
-            value={props.inputed}
-            onChange={(e)=>props.setInputed(e.target.value)}/>
-            <button className="TaskDetail" onClick={()=>props.addTask()}>+</button>
+            value={inputed}
+            onChange={(e)=>setInputed(e.target.value)}/>
+            <button className="TaskDetail" onClick={()=>addTask()}>+</button>
         </div>
     )
 }
