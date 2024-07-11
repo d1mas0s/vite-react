@@ -64,6 +64,16 @@
     outline: 0px;
     margin: 2px;
   }
+
+  .PagiButtonDisabled {
+    width: 70px;
+    height: 50px;
+    background: rgba(99, 99, 107, 0.76);
+    color: white;
+    font-size: x-large;
+    outline: 0px;
+    margin: 2px;
+  }
   
   .Post {
     height: 130px;
