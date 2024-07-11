@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
-import Bar from './Bar'
-import '/src/Posts/style.css'
+import Bar from '../components/Posts/Bar'
+import './assets/style.css'
 
 const Posts = () => {
     const [posts, setPosts] = useState([]);

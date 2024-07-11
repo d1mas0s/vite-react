@@ -1,8 +1,8 @@
 import { Fragment, useState } from "react";
-import Input from "./assets/Input";
-import List from "./assets/List";
+import Input from "../components/Todo/Input";
+import List from "../components/Todo/List";
 //import Task from "./assets/Task";
-import './style.css'
+import './assets/style.css'
 
 function Todo() {
     const [inputed, setInputed] = useState("")
