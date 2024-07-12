@@ -83,3 +83,29 @@
     margin: 5px;
     padding: 5px;
   }
+
+  .PopupOn {
+    width: 15%;
+    height: 120px;
+    background: rgb(37, 37, 39);
+    color: white;
+    font-size: x-large;
+    position: absolute;
+    left: 42.5%;
+    display: flex;
+    align-items: center;
+  }
+
+  .PopupOff {
+    display: none;
+  }
+
+  .Input {
+    width: 80%;
+    height: 40px;
+    background: rgb(74, 74, 95);
+    color: white;
+    font-size: x-large;
+    outline: 0px;
+    margin: 2px;
+  }
