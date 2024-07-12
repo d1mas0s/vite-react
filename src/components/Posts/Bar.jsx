@@ -23,7 +23,7 @@ const Bar = ({posts, page, setPage, lastPage}) => {
         onClick={()=>setPage(page!=l&&page!=l-1?(page%2==0?page:page+1):l-2)}>
         {page!=l&&page!=l-1?(page%2==0?page:page+1):l-2}</button>
         
-        <button className="PagiButton" onClick={()=>{setPopTog(!popTog);setiValue("")}}>...</button>
+        <button className={popTog?"PagiButtonActive":"PagiButton"} onClick={()=>{setPopTog(!popTog);setiValue("")}}>...</button>
 
         <button className={page==l-1?"PagiButtonActive":"PagiButton"} onClick={()=>setPage(l-1)}>{l-1}</button>
         <button className={page==l?"PagiButtonActive":"PagiButton"} onClick={()=>setPage(l)}>{l}</button>
