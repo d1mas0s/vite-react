@@ -5,11 +5,6 @@ const Bar = ({posts, page, setPage, lastPage}) => {
 
     const [iValue, setiValue] = useState("");
     const [popTog, setPopTog] = useState(false);
-    
-    const handleSubmit = (event) => {
-      event.preventDefault();
-      if (!(+iValue.isNaN) && +iValue >= 1 && +iValue <= l) setPage(+iValue);
-  }
 
     if (posts.length != 0) return (
       <>
@@ -31,10 +26,8 @@ const Bar = ({posts, page, setPage, lastPage}) => {
         <button className={page != l ? "PagiButton" : "PagiButtonDisabled"} disabled={page == l} onClick={page < l ? () => setPage(page+1) : () => setPage(l)}>next</button>
         
         <div className={popTog ? "PopupOn" : "PopupOff"}>
-          <form onSubmit={handleSubmit}>
-            <input className="Input" type="text" value={iValue} onChange={(e) => setiValue(e.target.value)} />
-            <button className="PagiButton" type="submit">go</button>
-          </form>
+          <input className="Input" value={iValue} onChange={(e) => setiValue(e.target.value)}/>
+          <button className="PagiButton" onClick={() => {if (!(+iValue.isNaN) && +iValue >= 1 && +iValue <= l) setPage(+iValue)}}>go</button>
         </div>
       </>
     );
