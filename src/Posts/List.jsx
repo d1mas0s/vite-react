@@ -27,7 +27,7 @@ const Posts = () => {
         <Bar posts={posts} page={page} setPage={setPage} lastPage={lastPage} setPostsPerPage={setPostsPerPage}/>
         <div className='PostsBackground'>
         {posts.map((post, index) => (
-          index >=page*postsPerPage-postsPerPage && index <= page*postsPerPage-1? 
+          index >= page*postsPerPage-postsPerPage && index <= page*postsPerPage-1? 
           <div className='Post' key={index}>
             <h3>{post.id}. {post.title}</h3>
             <p>{post.body}</p>

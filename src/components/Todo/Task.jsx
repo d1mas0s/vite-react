@@ -6,10 +6,10 @@ const Task = ({value, toggled, id, editing, togTask, delTask, editTask}) => {
             <div className={toggled?"TaskPlateDone":"TaskPlateUndone"} key={id}>
                 <input className={editing?"TaskTextContainerOpen":"TaskTextContainerClosed"} value={finValue} disabled={!editing}/>
                 <input className="TaskDetail" type="checkbox"
-                onClick={()=>togTask(id)}
+                onClick={() => togTask(id)}
                 defaultChecked={toggled}/>
-                <button className="TaskDetail" onClick={()=>delTask(id)}>x</button>
-                <input className="TaskDetail" type="checkbox" onClick={()=>editTask(id)} defaultChecked={editing} checked={editing}/>
+                <button className="TaskDetail" onClick={() => delTask(id)}>x</button>
+                <input className="TaskDetail" type="checkbox" onClick={() => editTask(id)} defaultChecked={editing} checked={editing}/>
             </div>
         </>
     )
