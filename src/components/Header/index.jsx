@@ -1,4 +1,4 @@
-import './assets/style.css'
+import '/src/assets/Header/style.css'
 import { Link } from 'react-router-dom'
 
 export default function Header() {
